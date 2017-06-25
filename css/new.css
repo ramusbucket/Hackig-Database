@@ -1,0 +1,145 @@
+ .affix {
+      top: 0;
+      width: 60%;
+      margin: auto;
+      font-size: 150%;
+  }
+  .navbar .navbar-nav > li{
+	  color: black;
+  }
+  .navbar-default .navbar-nav > li > a:focus {
+	  color: #3399ff;
+  }
+  .copyright{
+ 	  font-size:75%;
+  }
+  .affix + .container-fluid {
+      padding-top: 140px;
+  }
+  body{
+	  width: 58%;
+	  margin: auto;
+	  font-size: 150%;
+	  color: #666666;
+          font-family: 'Varela', sans-serif;
+  }
+  img{
+	  margin-left: 20px;
+  }
+  .number{
+	  color:black;
+	  font-size: 400%;
+	  text-align: right;
+	  padding-top: 5px;
+  }
+  .titolo{
+	  font-size: 300%;
+  }
+  .sottotitolo{
+	  padding-top: 20px;
+  }
+  .container{
+	  padding-top: 15px;
+	  width: 100%;
+	  
+  }
+  .stylish-input-group .input-group-addon{
+    background: white !important; 
+
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+	
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.glitch {
+  color: black;
+  
+  
+}
+
+
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(0px, 9999px, 39px, 0);
+  }
+  5% {
+    clip: rect(0px, 9999px, 67px, 0);
+  }
+  10% {
+    clip: rect(0px, 9999px, 79px, 0);
+  }
+  15% {
+    clip: rect(0px, 9999px, 78px, 0);
+  }
+  20% {
+    clip: rect(0px, 9999px, 21px, 0);
+  }
+  25% {
+    clip: rect(0px, 9999px, 86px, 0);
+  }
+  30% {
+    clip: rect(0px, 9999px, 79px, 0);
+  }
+  35% {
+    clip: rect(0px, 9999px, 6px, 0);
+  }
+  40% {
+    clip: rect(0px, 9999px, 72px, 0);
+  }
+  45% {
+    clip: rect(0px, 9999px, 68px, 0);
+  }
+  50% {
+    clip: rect(0px, 9999px, 86px, 0);
+  }
+  55% {
+    clip: rect(0px, 9999px, 74px, 0);
+  }
+  60% {
+    clip: rect(0px, 9999px, 70px, 0);
+  }
+  65% {
+    clip: rect(0px, 9999px, 46px, 0);
+  }
+  70% {
+    clip: rect(0px, 9999px, 5px, 0);
+  }
+  75% {
+    clip: rect(0px, 9999px, 91px, 0);
+  }
+  80% {
+    clip: rect(0px, 9999px, 16px, 0);
+  }
+  85% {
+    clip: rect(0px, 9999px, 59px, 0);
+  }
+  90% {
+    clip: rect(0px, 9999px, 95px, 0);
+  }
+  95% {
+    clip: rect(0px, 9999px, 45px, 0);
+  }
+  100% {
+    clip: rect(0px, 9999px, 37px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  text-shadow: 2px 0 lightgreen;
+   color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 20s linear alternate-reverse;
+  animation-iteration-count: 2;
+
+}
+
