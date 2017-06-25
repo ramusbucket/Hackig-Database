@@ -1,0 +1,29 @@
+body {
+  min-height: 2000px;
+  padding-top: 40px;
+  font-family: 'Varela', sans-serif;
+}
+img{
+ padding-top: 10px;
+ width: 40%;
+ height: 40%;
+}
+.copyright{
+ font-size:75%;
+}
+.stylish-input-group .input-group-addon{
+ background: white !important; 
+}
+.stylish-input-group .form-control{
+ border-right:0; 
+ box-shadow:0 0 0; 
+ border-color:#ccc;
+}
+.stylish-input-group button{
+ border:0;
+ background:transparent;
+}
+.jumbotron{
+ background: white!important;
+}
+ 
