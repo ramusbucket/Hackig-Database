@@ -11,9 +11,9 @@ if(isset($_GET['error'])) {
 
 if(login_check($mysqli) == true) {
 
-if(isset($_POST['categoria'], $_POST['descrizione'], $_POST['command'])){
-   if ($insert_stmt = $mysqli->prepare("INSERT INTO knx (Categoria, descrizione, comando) VALUES (?, ?, ?)")) {    
-   $insert_stmt->bind_param('sss', $_POST['categoria'], $_POST['descrizione'], $_POST['command']); 
+if(isset($_POST['descrizione'], $_POST['command'])){
+   if ($insert_stmt = $mysqli->prepare("INSERT INTO knx (descrizione, comando) VALUES (?, ?)")) {    
+   $insert_stmt->bind_param('ss', $_POST['descrizione'], $_POST['command']); 
    // Esegui la query ottenuta.
    $insert_stmt->execute();
    echo '<br><br><div class="alert alert-success"><strong>SUCCESS</strong> Command successfull added. </div>';
@@ -79,10 +79,6 @@ if ($insert_stmt = $mysqli->prepare("INSERT INTO members (username, password, sa
     			<div class="form-group">
       				<label for="descrizione">Descrizione:</label>
       				<input type="text" class="form-control" id="descrizione" name="descrizione">
-    			</div>
-    			<div class="form-group">
-      				<label for="categoria">Categoria:</label>
-      				<input type="text" class="form-control" id="categoria" name="categoria">
     			</div>
     			<div class="form-group">
   	  			<label for="command">Command:</label>

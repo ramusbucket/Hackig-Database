@@ -1,15 +1,5 @@
 <?php
-$conn = new mysqli("", "", "", "");
-$conn->set_charset("utf8");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-$sql = "SELECT Id FROM knx";
-$result = $conn->query($sql);
-$count = mysqli_num_rows($result);
-
 include('header2.html');
-
 ?>
 
 <div class="container-fluid" style="padding-bottom: 60px;">
