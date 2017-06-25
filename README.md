@@ -4,6 +4,8 @@ This software has purpose of help hacker/pentester in their activity or CTF cont
 The database is constantly updated and everyone can send personal commands.
 Enjoy.
 
+### The basic scripts that are part of story of this project can be foud here: https://github.com/ddarix/knxcommand/
+
 # Release history
 
 v 4.1 -- addedd support for cli and download page
